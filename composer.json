@@ -1,0 +1,10 @@
+{
+    "name": "Foreveryone-cz/LUI-2",
+    "description": "Front-end framework for making responsive websites",
+    "type": "library",
+    "keywords": ["less", "ui", "framework", "responsive", "front-end", "jquery"],
+    "homepage": "https://github.com/Foreveryone-cz/LUI-2",
+    "support": {
+        "source": "https://github.com/Foreveryone-cz/LUI-2"
+    }
+}
