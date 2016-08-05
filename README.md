@@ -12,3 +12,12 @@ If you're looking for **older LUI** look here: https://github.com/Foreveryone-cz
 ---
 
 Repository for LUI 2.0 development
+
+---
+
+### Installation
+- `bower install LUI-2`
+- `composer install Foreveryone-cz/LUI-2`
+- download or clone manualy
+
+
