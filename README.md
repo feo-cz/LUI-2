@@ -32,9 +32,9 @@ Repository for LUI 2.0 development
 - iOS 7 and newer
 - Mac OS X Mavericks and newer (Safari 7.1)
 - Internet Explorer 10 and newer (Internet Explorer 9 with javascript help)
-<br><br><br>
-### <center>Supported by</center>
-<br>
-<center>[![Lui 2 logo](http://less-ui.net/browserstack_logo.png)](//browserstack.com)</center>
-<br><br>
-<center>[![Lui 2 logo](http://less-ui.net/foreveryone_logo.png)](//foreveryone.cz)</center>
+
+### Supported by
+
+[![Lui 2 logo](http://less-ui.net/browserstack_logo.png)](//browserstack.com)
+
+[![Lui 2 logo](http://less-ui.net/foreveryone_logo.png)](//foreveryone.cz)
