@@ -3,6 +3,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/stargazers)
 [![GitHub stars](https://img.shields.io/github/stars/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/stargazers)
 
+
 ![Lui 2 logo](http://less-ui.net/lui2_logo_medium.png)
 
 Front-end framework for fast and easy web development of responsive websites
@@ -21,3 +22,13 @@ Repository for LUI 2.0 development
 - download or clone manualy
 
 
+### Features
+- Completely **responsive**
+- **Flexbox** grid with many options such as horizontal, vertical alignment, extra column sizes and more
+- Completely modular. Need grid only? no problem!
+
+### Compatibility
+- Android 5 and newer
+- iOS 7 and newer
+- Mac OS X Mavericks and newer (Safari 7.1)
+- Internet Explorer 10 and newer (Internet Explorer 9 with javascript help)
