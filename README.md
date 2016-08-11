@@ -3,8 +3,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/stargazers)
 [![GitHub stars](https://img.shields.io/github/stars/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/stargazers)
 
-# LUI
-### version 2
+[![Lui 2 logo](http://less-ui.net/lui2_logo_medium.png)]
+
 Front-end framework for fast and easy web development of responsive websites
 
 If you're looking for **older LUI** look here: https://github.com/Foreveryone-cz/LUI
