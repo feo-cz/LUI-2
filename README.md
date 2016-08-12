@@ -1,8 +1,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/issues)
 [![GitHub forks](https://img.shields.io/github/forks/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/network)
 [![GitHub stars](https://img.shields.io/github/stars/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/stargazers)
-[![GitHub stars](https://img.shields.io/github/stars/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/stargazers)
-
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Foreveryone-cz/LUI-2/master/LICENSE)
 
 ![Lui 2 logo](http://less-ui.net/lui2_logo_medium.png)
 
