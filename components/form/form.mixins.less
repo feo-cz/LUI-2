@@ -1,2 +1,491 @@
 // LUI2
 // FORM - MIXINS
+
+.lui.form {
+
+	// FORM ITEM
+	.item {
+		.this(){
+			.lui.clear.after();
+			padding: @lui_component_form_item_spacing 0;
+			margin: 0 -15px;
+		}
+
+		// FORM ITEM LABEL
+		.label(){
+			display: block;
+			padding: @lui_component_form_label_spacing 15px;
+			font-size: 16px;
+			text-align: right;
+
+			// REQUIRED ITEM
+			&.required:after {
+				color: @color_negative;
+				content:" *";
+			}
+
+			// RESPONSIVE LABELS
+			.block {
+				text-align: left;
+				padding: @lui_component_form_label_spacing 0;
+			}
+
+			&.xs-block {
+				.lui.form.item.label.block();
+			}
+
+			.inline {
+				text-align: right;
+				padding: @lui_component_form_label_spacing 15px;
+			}
+
+			&.xs-inline {
+				.lui.form.item.label.inline();
+			}
+
+
+			& when (@grid_sm_enable = true){
+				@media (min-width:@grid_sm_start){
+					&.sm-block {
+						.lui.form.item.label.block();
+					}
+					&.sm-inline {
+						.lui.form.item.label.inline();
+					}
+				}
+			}
+
+			& when (@grid_md_enable = true){
+				@media (min-width:@grid_md_start){
+					&.md-block {
+						.lui.form.item.label.block();
+					}
+					&.md-inline {
+						.lui.form.item.label.inline();
+					}
+				}
+			}
+
+			& when (@grid_lg_enable = true){
+				@media (min-width:@grid_lg_start){
+					&.lg-block {
+						.lui.form.item.label.block();
+					}
+					&.lg-inline {
+						.lui.form.item.label.inline();
+					}
+				}
+			}
+
+			& when (@grid_xl_enable = true){
+				@media (min-width:@grid_xl_start){
+					&.xl-block {
+						.lui.form.item.label.block();
+					}
+					&.xl-inline {
+						.lui.form.item.label.inline();
+					}
+				}
+			}
+
+			& when (@grid_hd_enable = true){
+				@media (min-width:@grid_hd_start){
+					&.hd-block {
+						.lui.form.item.label.block();
+					}
+					&.hd-inline {
+						.lui.form.item.label.inline();
+					}
+				}
+			}
+
+			& when (@grid_2k_enable = true){
+				@media (min-width:@grid_2k_start){
+					&.2k-block {
+						.lui.form.item.label.block();
+					}
+					&.2k-inline {
+						.lui.form.item.label.inline();
+					}
+				}
+			}
+		}
+
+		// STATUS
+		// FOR FORM VALIDATORS OR OTHER MESSAGES SHOWN BESIDE INPUT
+		.status() {
+			padding: 11px 15px;
+			margin: -5px 0;
+			font-size: 12px;
+			color: gray;
+			padding-left: 0;
+
+			// SOME SPACING
+			&:before {
+				padding-right: 7px;
+			}
+
+			&:after {
+				padding-left: 7px;
+			}
+
+			// VARIANTS
+			&.positive {
+				color: @color_positive;
+			}
+
+			&.negative {
+				color: @color_negative;
+			}
+
+			&.warning {
+				color: @color_warning;
+			}
+
+			&.notice {
+				color: @color_notice;
+			}
+		}
+
+		// INPUT
+		// wraps input or select elements
+		.value {
+			.this(){
+				// INPUT WITH PREFIX OR POSTFIX - width calculated by javascript
+				// POSTFIX/PREFIX HAS ABSOLUTE POSITION
+				&.postfix,
+				&.prefix {
+					position: relative;
+				}
+			}
+
+			// PREFIX
+			.prefix(){
+				.lui.box-sizing.border-box();
+				position: absolute;
+				top: 0;
+				left:  0px;
+				display: block;
+				padding: 0 7px;
+				float: left;
+				line-height: 37px;
+				height: 37px;
+				background: #f2f2f2;
+				border: 1px solid #e2e2e2;
+				border-right: 0;
+				font-size: 13px;
+				color: gray;
+				border-radius: 3px 0 0 3px;
+			}
+
+			// POSTFIX
+			.postfix(){
+				.lui.box-sizing.border-box();
+				position: absolute;
+				top: 0;
+				right: 0px;
+				display: block;
+				padding: 0 7px;
+				float: right;
+				line-height: 37px;
+				height: 37px;
+				background: #f2f2f2;
+				border: 1px solid #e2e2e2;
+				border-left: 0;
+				font-size: 13px;
+				color: gray;
+				border-radius: 0 3px 3px 0;
+			}
+
+
+			// TEXT INPUT STYLES
+			.input(@width:100px){
+				width: @width;
+				height: 37px;
+				border: 1px solid #e2e2e2;
+				border-radius: 3px;
+				padding: 10px;
+				font-family: inherit;
+				font-size: 13px;
+				color: #555555;
+				outline: none;
+
+				&:focus {
+					color: black;
+					border-color: #c0c0c0;
+				}
+
+				&[disabled],
+				&[readonly] {
+					background:#f7f7f7;
+					color: #5a5a5a;
+					cursor: default;
+
+					&:focus {
+						color: #5a5a5a;
+					}
+				}
+				
+				&[readonly] {
+					cursor: text;
+				}
+			}
+
+			// TEXTAREA STYLES
+			.textarea(@width:100%,@height:100px,@max-width:100%,@max-height:500px){
+				width: @width;
+				min-height: @height;
+				max-width: @max-width;
+				max-height: @max-height;
+				height: 37px;
+				border: 1px solid #e2e2e2;
+				border-radius: 3px;
+				padding: 10px;
+				font-family: inherit;
+				font-size: 13px;
+				color: #555555;
+				outline: none;
+
+				&[disabled]{
+					background:#f2f2f2;
+					cursor: default;
+				}
+
+				&[readonly]{
+					background:#f2f2f2;
+					cursor: text;
+				}
+
+				&:focus {
+					color: black;
+					border-color: #c0c0c0;
+				}
+			}
+
+			// SELECT
+			.select(@width:100%){
+				width: @width;
+				height: 37px;
+				border: 1px solid #e2e2e2;
+				border-radius: 3px;
+				padding: 9px;
+				font-family: inherit;
+				font-size: 13px;
+				color: #555555;
+				cursor: pointer;
+				outline: none;
+
+				&:focus {
+					color: black;
+					border-color: #c0c0c0;
+				}
+
+				&[disabled],
+				&[readonly] {
+					background:#f7f7f7;
+					color: #5a5a5a;
+					cursor: default;
+
+					&:focus {
+						color: #5a5a5a;
+					}
+				}
+			}
+
+			// CHECKBOX
+			.check(){
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+				height: 30px;
+				padding-left: 30px;
+
+				input {
+					opacity: 0;
+					position: absolute;
+					width: 0;
+					height: 0;
+				}
+
+				// SPAN MUST USED AT ALL TIME
+				span {
+					line-height: 30px;
+					margin-right: 5px;
+					color: #555555;
+					font-size: 13px;
+
+					&:before {
+						.lui.box-sizing.border-box();
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 15px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+						font-family: FontAwesome;
+						font-weight: normal;
+						font-size: 19px;
+						content: "\f096";
+						color: #e2e2e2;
+
+						&:hover {
+							color: gray;
+						}
+					}
+				}
+
+				&:hover span:before {
+					color: #2c2c2c;
+				}
+
+				input:checked ~ span:before {
+					content: "\f14a";
+					color: #2c2c2c;
+				}
+
+				input:focus ~ span {
+					background: rgba(0,0,0,0.05);
+
+					&:before {
+						content: "\f14a";
+					}
+				}
+
+				&.positive input:checked ~ span:before {
+					color: @color_positive;
+				}
+
+				&.negative input:checked ~ span:before {
+					color: @color_negative;
+				}
+
+				&.warning input:checked ~ span:before {
+					color: @color_warning;
+				}
+
+				&.notice input:checked ~ span:before {
+					color: @color_notice;
+				}
+			}
+
+			// LIST OF CHECKBOXES
+			.checklist(){
+				padding: 8px 0;
+
+				&.inline {
+					.lui.clear.after();
+					padding: 0 0 8px 0;
+				}
+
+				& > div {
+					margin: -8px 0;
+				}
+
+				&.inline > div {
+					float: left;
+					margin: 0 20px -8px 0;
+				}
+			}
+
+			// RADIO
+			.radio(){
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+				height: 30px;
+				padding-left: 30px;
+
+				input {
+					opacity: 0;
+					position: absolute;
+					width: 0;
+					height: 0;
+				}
+
+				// SPAN MUST USED AT ALL TIME
+				span {
+					line-height: 30px;
+					margin-right: 5px;
+					color: #555555;
+					font-size: 13px;
+
+					&:before {
+						.lui.box-sizing.border-box();
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 15px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+						font-family: FontAwesome;
+						font-weight: normal;
+						font-size: 19px;
+						content: "\f10c";
+						color: #e2e2e2;
+
+						&:hover {
+							color: gray;
+						}
+					}
+				}
+
+				&:hover span:before {
+					color: #2c2c2c;
+				}
+
+				input:checked ~ span:before {
+					content: "\f192";
+					color: #2c2c2c;
+				}
+
+				input:focus ~ span {
+					background: rgba(0,0,0,0.05);
+
+					&:before {
+						content: "\f192";
+					}
+				}
+
+				&.positive input:checked ~ span:before {
+					color: @color_positive;
+				}
+
+				&.negative input:checked ~ span:before {
+					color: @color_negative;
+				}
+
+				&.warning input:checked ~ span:before {
+					color: @color_warning;
+				}
+
+				&.notice input:checked ~ span:before {
+					color: @color_notice;
+				}
+			}
+
+			// LIST OF RADIOS
+			.radiolist(){
+				padding: 8px 0;
+
+				&.inline {
+					.lui.clear.after();
+					padding: 0 0 8px 0;
+				}
+
+				& > div {
+					margin: -8px 0;
+				}
+
+				&.inline > div {
+					float: left;
+					margin: 0 20px -8px 0;
+				}
+			}
+		}
+	}
+
+	
+
+}
