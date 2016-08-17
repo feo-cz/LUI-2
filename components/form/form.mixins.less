@@ -292,6 +292,105 @@
 				}
 			}
 
+			// SELECT JQUERY
+			.select-jquery(){
+
+				.this(){
+					position: relative;
+					display: block;
+					.lui.form.item.value.select();
+					padding-left: 13px;
+					padding-right: 45px;
+					cursor: pointer;
+					
+					
+					&.ui-selectmenu-disabled {
+						background:#f7f7f7;
+						cursor: text;
+						color: #5a5a5a;
+						cursor: default;
+						pointer-events: none;
+					}
+					
+					& > .ui-icon {
+						display: inline-block;
+						position: absolute;
+						top: 50%;
+						right: 15px;
+						height: 20px;
+						line-height: 20px;
+						margin-top: -10px;
+						
+						&:before {
+							font-family: FontAwesome;
+							content: "\f0d7";
+						}
+					}
+					
+					& > .ui-selectmenu-text {
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+					
+					&.ui-state-focus {
+						& > .ui-icon {
+							.lui.transform.rotate(180deg);
+						}
+					}
+				}
+
+				.dropdown(){
+					position: relative;
+					z-index: 20;
+					padding: 0 2px 0 0; // BORDER SPACING
+					
+					& > .inside {
+						position: absolute;
+
+						.ui-selectmenu-menu {
+							display: none;
+							max-width: calc(~"100% - 0px");
+
+							&.ui-selectmenu-open {
+								display: block;
+							}
+
+							& > ul {
+								display: block;
+								max-width:100%;
+								list-style: none;
+								padding: 0;
+								margin: 0;
+								border: 1px solid #c0c0c0;
+								border-top: 0;
+								background: white;
+								position: relative;
+								top: -4px;
+								
+								& > li {
+									display: block;
+									max-width: 100%;
+									padding: 10px 13px;
+									font-size: 13px;
+									cursor: pointer;
+									white-space: normal;
+									color: #2e2e2e;
+									
+									&:hover {
+										background: rgba(0,0,0,0.05);
+									}
+									
+									.ui-state-active {
+										color: #108de6;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
 			// CHECKBOX
 			.check(){
 				position: relative;
