@@ -8,7 +8,7 @@ $(document).ready(function () {
 	});
 
 	// FORM PREFIX / POSTFIX
-	$(window).load(function () {
+	/*$(window).load(function () {
 		function prefix_calc() {
 			$(".lui_form .item .value.prefix input").each(function () {
 				var prefix_element = $(this).siblings(".lui_prefix").outerWidth(true);
@@ -34,5 +34,5 @@ $(document).ready(function () {
 					postfix_calc();
 				}, 450);
 		});
-	});
+	});*/
 });
