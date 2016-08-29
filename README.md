@@ -2,8 +2,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/network)
 [![GitHub stars](https://img.shields.io/github/stars/Foreveryone-cz/LUI-2.svg)](https://github.com/Foreveryone-cz/LUI-2/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Foreveryone-cz/LUI-2/master/LICENSE)
-[![GitHub Version](https://img.shields.io/badge/version-2.0.1-lightgrey.svg)](https://github.com/Foreveryone-cz/LUI-2/releases)
 
+[![GitHub Version](https://img.shields.io/badge/version-2.0.1-lightgrey.svg)](https://github.com/Foreveryone-cz/LUI-2/releases)
 [![Bower](https://img.shields.io/bower/v/LUI-2.svg?maxAge=2592000)]()
 
 Front-end framework for fast and easy web development of responsive websites
