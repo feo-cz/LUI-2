@@ -12,6 +12,14 @@
 		text-decoration: none;
 		border-radius: @lui_button_border-radius;
 		background: @lui_button_default_bg;
+
+		&[class*="fa_b"]:before{
+			padding-right: @lui_button_icon_padding;
+		}
+
+		&[class*="fa_a"]:after{
+			padding-left: @lui_button_icon_padding;
+		}
 	}
 
 	.hover() when (@lui_button_mixin_default_enabled = true){
