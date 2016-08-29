@@ -5,23 +5,201 @@
 .lui.button when (@lui_button_mixin_enabled = true){
 	.this() when (@lui_button_mixin_default_enabled = true){
 		display: inline-block;
-		padding: @lui_button_padding;
-		font-size: @lui_button_font-size;
 		color: inherit;
 		cursor: pointer;
 		text-decoration: none;
 		border-radius: @lui_button_border-radius;
 		background: @lui_button_default_bg;
 
-		&[class*="fa_b"]:before{
+		.lui.button.regular();
+
+		&[class*="fa_b"]:before {
 			padding-right: @lui_button_icon_padding;
 		}
 
-		&[class*="fa_a"]:after{
+		&[class*="fa_a"]:after {
 			padding-left: @lui_button_icon_padding;
+		}
+
+		// SIZES
+		&.hidden,
+		&.xs-hidden {
+			.lui.button.hidden();
+		}
+
+		&.small,
+		&.xs-small {
+			.lui.button.small();
+		}
+
+		&.regular,
+		&.xs-regular {
+			.lui.button.regular(); // probably dont need it, but you know...
+		}
+
+		&.big,
+		&.xs-big {
+			.lui.button.big();
+		}
+
+		&.huge,
+		&.xs-huge {
+			.lui.button.huge();
+		}
+
+		// RESPONSIVE
+		& when (@grid_sm_enable = true){
+			@media (min-width:@grid_sm_start){
+				&.sm-hidden {
+					.lui.button.hidden();
+				}
+				&.sm-small {
+					.lui.button.small();
+				}
+				&.sm-regular {
+					.lui.button.regular();
+				}
+				&.sm-big {
+					.lui.button.big();
+				}
+				&.sm-huge {
+					.lui.button.huge();
+				}
+			}
+		}
+
+		& when (@grid_md_enable = true){
+			@media (min-width:@grid_md_start){
+				&.md-hidden {
+					.lui.button.hidden();
+				}
+				&.md-small {
+					.lui.button.small();
+				}
+				&.md-regular {
+					.lui.button.regular();
+				}
+				&.md-big {
+					.lui.button.big();
+				}
+				&.md-huge {
+					.lui.button.huge();
+				}
+			}
+		}
+
+		& when (@grid_lg_enable = true){
+			@media (min-width:@grid_lg_start){
+				&.lg-hidden {
+					.lui.button.hidden();
+				}
+				&.lg-small {
+					.lui.button.small();
+				}
+				&.lg-regular {
+					.lui.button.regular();
+				}
+				&.lg-big {
+					.lui.button.big();
+				}
+				&.lg-huge {
+					.lui.button.huge();
+				}
+			}
+		}
+
+		& when (@grid_xl_enable = true){
+			@media (min-width:@grid_xl_start){
+				&.xl-hidden {
+					.lui.button.hidden();
+				}
+				&.xl-small {
+					.lui.button.small();
+				}
+				&.xl-regular {
+					.lui.button.regular();
+				}
+				&.xl-big {
+					.lui.button.big();
+				}
+				&.xl-huge {
+					.lui.button.huge();
+				}
+			}
+		}
+
+		& when (@grid_hd_enable = true){
+			@media (min-width:@grid_hd_start){
+				&.hd-hidden {
+					.lui.button.hidden();
+				}
+				&.hd-small {
+					.lui.button.small();
+				}
+				&.hd-regular {
+					.lui.button.regular();
+				}
+				&.hd-big {
+					.lui.button.big();
+				}
+				&.hd-huge {
+					.lui.button.huge();
+				}
+			}
+		}
+
+		& when (@grid_2k_enable = true){
+			@media (min-width:@grid_2k_start){
+				&.2k-hidden {
+					.lui.button.hidden();
+				}
+				&.2k-small {
+					.lui.button.small();
+				}
+				&.2k-regular {
+					.lui.button.regular();
+				}
+				&.2k-big {
+					.lui.button.big();
+				}
+				&.2k-huge {
+					.lui.button.huge();
+				}
+			}
 		}
 	}
 
+	// SIZES MIXINS
+	.hidden(){
+		display: none;
+	}
+
+	.small(){
+		display: inline-block;
+		padding: @lui_button_small_padding;
+		font-size: @lui_button_small_font-size;
+	}
+
+	.regular(){
+		display: inline-block;
+		padding: @lui_button_regular_padding;
+		font-size: @lui_button_regular_font-size;
+	}
+
+	.big(){
+		display: inline-block;
+		padding: @lui_button_big_padding;
+		font-size: @lui_button_big_font-size;
+	}
+
+	.huge(){
+		display: inline-block;
+		padding: @lui_button_huge_padding;
+		font-size: @lui_button_huge_font-size;
+	}
+
+
+	// STATES
 	.hover() when (@lui_button_mixin_default_enabled = true){
 		background: @lui_button_default_hover_bg;
 	}
