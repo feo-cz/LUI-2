@@ -6,10 +6,13 @@
 	.this() when (@lui_button_mixin_default_enabled = true){
 		display: inline-block;
 		color: inherit;
-		cursor: pointer;
 		text-decoration: none;
 		border-radius: @lui_button_border-radius;
 		background: @lui_button_default_bg;
+		
+		// BUTTON tag or empty A
+		cursor: pointer;
+		border: 0;
 
 		.lui.button.regular();
 
