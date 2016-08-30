@@ -48,6 +48,9 @@
 		}
 
 		// RESPONSIVE
+		// each breakpoint is enabled/disabled by GRID configuration file
+		// so its easy to turn off styles for unused breakpoints (ex: HD, 2K)
+		// to save file size of compiled styles
 		& when (@grid_sm_enable = true){
 			@media (min-width:@grid_sm_start){
 				&.sm-hidden {

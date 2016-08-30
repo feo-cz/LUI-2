@@ -2,14 +2,6 @@
 // BUTTON - CONFIG
 
 
-// MIXINS
-// this is master switch to disable default mixins completely
-// in case you want to write your own
-@lui_button_mixin_enabled:				true;
-
-
-// DISABLED BUTTONS
-@lui_button_mixin_disabled_enabled:		true;
 
 
 // BASIC STYLES
@@ -34,8 +26,28 @@
 @lui_button_huge_padding:		15px 30px;
 @lui_button_huge_font-size:		20px;
 
-// TYPES
+// CLASSES
+// all styles assigned to .lui_button
+// turning off these settings WILL NOT disable .lui.button mixins
+@lui_button_class_enabled:			true;
+
+@lui_button_default_enabled:		true;
+@lui_button_disabled_enabled:		true;
+@lui_button_primary_enabled:		true;
+@lui_button_secondary_enabled:		true;
+@lui_button_info_enabled:			true;
+@lui_button_success_enabled:		true;
+@lui_button_warning_enabled:		true;
+@lui_button_error_enabled:			true;
+
+
+// MIXINS
+// this is master switch to disable default mixins completely
+// in case you want to write your own
+@lui_button_mixin_enabled:				true;
+
 @lui_button_mixin_default_enabled:		true;
+@lui_button_mixin_disabled_enabled:		true;
 @lui_button_mixin_primary_enabled:		true;
 @lui_button_mixin_secondary_enabled:	true;
 @lui_button_mixin_info_enabled:			true;

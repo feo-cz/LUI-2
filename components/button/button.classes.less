@@ -2,29 +2,33 @@
 // BUTTON - CLASSNAMES
 
 
-.lui_button {
-	.lui.button.this();
+.lui_button when (@lui_button_class_enabled = true){
+	& when (@lui_button_default_enabled = true){
+		.lui.button.this();
 
-	&:not(.disabled):hover,
-	&.hover {
-		.lui.button.hover();
+		&:not(.disabled):hover,
+		&.hover {
+			.lui.button.hover();
+		}
+
+		&:not(.disabled):active,
+		&.active {
+			.lui.button.active();
+		}
 	}
 
-	&:not(.disabled):active,
-	&.active {
-		.lui.button.active();
-	}
+	& when (@lui_button_disabled_enabled = true){
+		&.disabled {
+			.lui.button.disabled();
+		}
 
-	&.disabled {
-		.lui.button.disabled();
-	}
-
-	&.force-disabled {
-		.lui.button.force-disabled();
+		&.force-disabled {
+			.lui.button.force-disabled();
+		}
 	}
 
 	// PRIMARY
-	&.primary {
+	&.primary when (@lui_button_primary_enabled = true){
 		.lui.button.primary.this();
 
 		&:not(.disabled):hover,
@@ -39,7 +43,7 @@
 	}
 
 	// SECONDARY
-	&.secondary {
+	&.secondary when (@lui_button_secondary_enabled = true){
 		.lui.button.secondary.this();
 
 		&:not(.disabled):hover,
@@ -54,7 +58,7 @@
 	}
 
 	// INFO
-	&.info {
+	&.info when (@lui_button_info_enabled = true){
 		.lui.button.info.this();
 
 		&:not(.disabled):hover,
@@ -69,7 +73,7 @@
 	}
 
 	// SUCCESS
-	&.success {
+	&.success when (@lui_button_success_enabled = true){
 		.lui.button.success.this();
 
 		&:not(.disabled):hover,
@@ -84,7 +88,7 @@
 	}
 
 	// WARNING
-	&.warning {
+	&.warning when (@lui_button_warning_enabled = true){
 		.lui.button.warning.this();
 
 		&:not(.disabled):hover,
@@ -99,7 +103,7 @@
 	}
 
 	// ERROR
-	&.error {
+	&.error when (@lui_button_error_enabled = true){
 		.lui.button.error.this();
 
 		&:not(.disabled):hover,
