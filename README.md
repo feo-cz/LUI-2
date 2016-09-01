@@ -21,6 +21,15 @@ Repository for LUI 2.0 development
 - `composer install Foreveryone-cz/LUI-2`
 - download or clone manualy
 
+### Using LUI in your project
+- import `router.less` in your project less file
+- or import your project less file at the end of `router.less`
+- *or if you don't want to use anything from LUI in your less files, you can use it as "standalone" package*
+
+### Configuration
+- `config.less` is main configuration file. If you use bower or composer to download LUI, you can create your own config and import it in your project less file. Make sure this config is imported after LUI, so it will overwrite default settings. Same applies for component's configs.
+- Then each component has its own config. For example button have `button.config.less` which is inside `components/button/` folder. This is to make LUI as modular as possible, so you can remove button folder completely, if you know you wont use it, or you can simply turn all styles off in `button.config.less`. However **grid is required in LUI**, as it's variables are used in other less files (grid breakpoints)
+
 
 ### Features
 - Completely **responsive**
