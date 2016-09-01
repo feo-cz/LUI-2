@@ -1,0 +1,33 @@
+// LUI2
+// MESSAGE - MIXINS
+
+
+.lui.message when (@lui_message_mixin_enabled = true){
+	.this() when (@lui_message_mixin_default_enabled = true){
+		margin: 7px 0;
+		padding: 15px;
+		background: @lui_message_default_bg;
+		color: @lui_message_default_color;
+		border-radius: @lui_message_border-radius;
+	}
+
+	.info() when (@lui_message_mixin_info_enabled = true){
+		background: @lui_message_info_bg;
+		color: @lui_message_info_color;
+	}
+
+	.warning() when (@lui_message_mixin_warning_enabled = true){
+		background: @lui_message_warning_bg;
+		color: @lui_message_warning_color;
+	}
+
+	.error() when (@lui_message_mixin_error_enabled = true){
+		background: @lui_message_error_bg;
+		color: @lui_message_error_color;
+	}
+
+	.success() when (@lui_message_mixin_success_enabled = true){
+		background: @lui_message_success_bg;
+		color: @lui_message_success_color;
+	}
+}
