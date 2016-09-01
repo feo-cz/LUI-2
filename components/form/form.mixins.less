@@ -172,11 +172,19 @@
 				height: 37px;
 				background: #f2f2f2;
 				border: 1px solid #e2e2e2;
-				border-right: 0;
+				margin-right: -1px;
 				font-size: 13px;
 				color: gray;
 				border-radius: 3px 0 0 3px;
 				white-space: nowrap;
+				text-decoration: none;
+
+				&.clickable:hover {
+					border-color: #539ad2;
+					background: #6cb9f5;
+					color: white;
+					z-index: 2;
+				}
 			}
 
 			// POSTFIX
@@ -189,11 +197,19 @@
 				height: 37px;
 				background: #f2f2f2;
 				border: 1px solid #e2e2e2;
-				border-left: 0;
+				margin-left: -1px;
 				font-size: 13px;
 				color: gray;
 				border-radius: 0 3px 3px 0;
 				white-space: nowrap;
+				text-decoration: none;
+
+				&.clickable:hover {
+					border-color: #539ad2;
+					background: #6cb9f5;
+					color: white;
+					z-index: 2;
+				}
 			}
 
 
