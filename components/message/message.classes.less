@@ -3,7 +3,6 @@
 
 
 .lui_message when (@lui_message_class_enabled = true){
-
 	& when (@lui_message_default_enabled = true){
 		.lui.message.this();
 	}
@@ -23,5 +22,4 @@
 	&.success when (@lui_message_success_enabled = true){
 		.lui.message.success();
 	}
-
 }

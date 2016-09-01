@@ -1,8 +1,8 @@
 // LUI2
 // FORM - MIXINS
 
-.lui.form when (@lui_form_mixins = true){
 
+.lui.form when (@lui_form_mixins = true){
 	// FORM ITEM
 	.item {
 		.this(){
@@ -42,7 +42,6 @@
 			&.xs-inline {
 				.lui.form.item.label.inline();
 			}
-
 
 			& when (@grid_sm_enable = true){
 				@media (min-width:@grid_sm_start){
@@ -309,7 +308,6 @@
 
 			// SELECT JQUERY
 			.select-jquery() when (@lui_form_mixins_select_jquery = true){
-
 				.this(){
 					position: relative;
 					display: block;
@@ -409,7 +407,6 @@
 			// jQuery datepicker
 			.datepicker() when (@lui_form_mixins_datepicker = true){
 				display: none;
-
 				width: 300px;
 				padding: 10px;
 				background: white;
