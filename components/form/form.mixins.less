@@ -390,6 +390,113 @@
 				}
 			}
 
+			// jQuery datepicker
+			.datepicker(){
+				display: none;
+
+				width: 300px;
+				padding: 10px;
+				background: white;
+				border: 1px solid #e2e2e2;
+				margin-top: -1px;
+
+				// ACTUAL MONTH + ARROWS
+				.ui-datepicker-header {
+					position: relative;
+					border-bottom: 2px solid #e2e2e2;
+					font-size: 14px;
+
+					// actual month
+					.ui-datepicker-title {
+						text-align: center;
+						margin: 0 35px;
+						font-size: 13px;
+						font-weight: bold;
+						height: 28px;
+						line-height: 25px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+
+					// select monts/year
+					select {
+						padding: 2px;
+						border: 1px solid #e2e2e2;
+						font-size: 13px;
+						cursor: pointer;
+						width: 35%;
+						margin: 0 1px;
+						height: 22px;
+						border-radius: 3px;
+					}
+
+					// arrows
+					.ui-datepicker-prev,
+					.ui-datepicker-next {
+						display: inline-block;
+						position: absolute;
+						top: 0;
+						
+						padding: 4px 6px;
+						border-radius: 3px;
+						cursor: pointer;
+						color: #1398fe;
+
+						&:hover {
+							background: #1398fe;
+							color: white;
+						}
+					}
+
+					.ui-datepicker-prev {
+						left: 0;
+					}
+
+					.ui-datepicker-next {
+						right: 0;
+					}
+				}
+
+				// calendar
+				table {
+					width: 100%;
+					border-collapse: collapse;
+					border: 0;
+					font-size: 14px;
+
+					th {
+						padding: 5px;
+						text-align: right;
+						font-weight: bold;
+					}
+
+					td {
+						padding: 1px;
+						text-align: right;
+
+						span,
+						a {
+							display: block;
+							padding: 4px;
+							border-radius: 3px;
+							text-decoration: none;
+
+							&.ui-state-highlight {
+								font-weight: bold;
+								color: #1398fe;
+								background: #f2f2f2;
+							}
+						}
+
+						a:hover {
+							background: #1398fe;
+							color: white;
+						}
+					}
+				}
+			}
+
 			// CHECKBOX
 			.check(){
 				position: relative;
