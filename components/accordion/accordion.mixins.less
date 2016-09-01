@@ -1,0 +1,72 @@
+// LUI2
+// ACCORDION - MIXINS
+
+
+.lui.accordion when (@lui_accordion_mixin_enabled = true){
+	.this(){
+		margin: 7px 0;
+	}
+
+	.header {
+
+		.this(){
+			position: relative;
+			padding: @lui_accordion_padding 30px @lui_accordion_padding @lui_accordion_padding;
+			margin: 0 0 2px 0;
+			font-size: 16px;
+			font-weight: bold;
+			border-radius: 3px;
+			background: @lui_accordion_default_bg;
+			color: @lui_accordion_default_color;
+			cursor: pointer;
+			outline: none;
+			//.lui.user-select.none();
+
+			&:after {
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				font-family: FontAwesome;
+				content: "\f0d7";
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				margin-top: -10px;
+				.lui.transition.this(600ms);
+			}
+
+			&.ui-accordion-header-active:after {
+				.lui.transform.rotate(180deg);
+			}
+		}
+
+		.info(){
+			background: @lui_accordion_info_bg;
+			color: @lui_accordion_info_color;
+		}
+
+		.positive(){
+			background: @lui_accordion_positive_bg;
+			color: @lui_accordion_positive_color;
+		}
+
+		.negative(){
+			background: @lui_accordion_warning_bg;
+			color: @lui_accordion_warning_color;
+		}
+
+		.warning(){
+			background: @lui_accordion_error_bg;
+			color: @lui_accordion_error_color;
+		}
+	}
+
+	.content {
+		padding: @lui_accordion_padding;
+		
+	}
+
+	
+	
+}
