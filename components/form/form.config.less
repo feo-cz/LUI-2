@@ -3,46 +3,54 @@
 
 
 // ENABLE/DISABLE
-@lui_component_form:		true;
-
-
-// FORM LABEL AND INPUT FIELDS
-@lui_component_form_label:				true;
-
-
-// CONFIRM/ERROR/INFO/WARNING TEXTS (can be used for form validation)
-@lui_component_form_info:				true;
-
-
-// TEXT INPUTS, SELECT, TEXTAREA
-// MASTER SWITCH
-@lui_component_form_inputs:				true;
-
-@lui_component_form_inputs_text:		true;
-@lui_component_form_inputs_prefix:		true;
-@lui_component_form_inputs_postfix:		true;
-@lui_component_form_inputs_textarea:	true;
-@lui_component_form_inputs_select:		true;
-@lui_component_form_select_jquery:		true;
-
+@lui_form:	true;
 
 // SPACING BETWEEN FORM ITEMS (LINES)
 // EACH SIDE = double between each
-@lui_component_form_item_spacing:		7.5px;
+@lui_form_item_spacing:		7.5px;
 
 
-// LABEL SPACING
-@lui_component_form_label_spacing:		9.5px;
+// FORM LABEL AND INPUT FIELDS
+@lui_form_label:			true;
+@lui_form_label_spacing:	9.5px;
 
 
-// LUI CHECKBOX
-// custom styled checkbox, can be used outside .lui_form
-@lui_component_check:				true;
+// CONFIRM/ERROR/INFO/WARNING TEXTS (can be used for form validation)
+@lui_form_info:				true;
 
 
-// LUI RADIO
-// custom styled radio, can be used outside .lui_form
-@lui_component_radio:				true;
+// CLASSNAMES
+// master switch
+@lui_form_inputs:			true;
+
+@lui_form_inputs_text:		true;
+@lui_form_inputs_prefix:	true;
+@lui_form_inputs_postfix:	true;
+@lui_form_inputs_textarea:	true;
+@lui_form_inputs_select:	true;
+@lui_form_select_jquery:	true;
+
+// independent (dont have to be inside .lui_form)
+@lui_form_check:			true;
+@lui_form_radio:			true;
+@lui_form_datepicker:		true;
 
 
-// DATEPICKER
+// MIXINS
+// master switch for all .lui.form mixins
+@lui_form_mixins:				true;
+
+@lui_form_mixins_label:			true;
+@lui_form_mixins_status:		true;
+@lui_form_mixins_value:			true;
+@lui_form_mixins_prefix:		true;
+@lui_form_mixins_postfix:		true;
+@lui_form_mixins_input:			true;
+@lui_form_mixins_textarea:		true;
+@lui_form_mixins_select:		true;
+@lui_form_mixins_select_jquery:	true;
+@lui_form_mixins_datepicker:	true;
+@lui_form_mixins_check:			true;
+@lui_form_mixins_check_list:	true;
+@lui_form_mixins_radio:			true;
+@lui_form_mixins_radio_list:	true;

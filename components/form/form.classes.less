@@ -2,38 +2,38 @@
 // FORM - CLASSNAMES
 
 
-.lui_form when (@lui_component_form = true){
+.lui_form when (@lui_form = true){
 
 	.item {
 		.lui.form.item.this();
 
 		// ITEM LABEL 
-		.label when (@lui_component_form_label = true){
+		.label when (@lui_form_label = true){
 			.lui.form.item.label();
 		}
 
 		// STATUS
-		.status when (@lui_component_form_info = true){
+		.status when (@lui_form_info = true){
 			.lui.form.item.status();
 		}
 
 		// INPUT 
-		.value when (@lui_component_form_inputs = true){
+		.value when (@lui_form_inputs = true){
 
 			.lui.form.item.value.this();
 
 			// PREFIX
-			.lui_prefix when (@lui_component_form_inputs_prefix = true){
+			.lui_prefix when (@lui_form_inputs_prefix = true){
 				.lui.form.item.value.prefix();
 			}
 
 			// POSTFIX
-			.lui_postfix when (@lui_component_form_inputs_postfix = true) {
+			.lui_postfix when (@lui_form_inputs_postfix = true) {
 				.lui.form.item.value.postfix();
 			}
 
 			// BASIC TEXT INPUTS
-			& when (@lui_component_form_inputs_text = true){
+			& when (@lui_form_inputs_text = true){
 				input[type="text"],
 				input[type="password"],
 				input[type="date"],
@@ -50,22 +50,22 @@
 					.lui.form.item.value.input(100%);
 				}
 
-				&.prefix input when (@lui_component_form_inputs_prefix = true){
+				&.prefix input when (@lui_form_inputs_prefix = true){
 					border-radius: 0 3px 3px 0;
 				}
 
-				&.postfix input when (@lui_component_form_inputs_postfix = true){
+				&.postfix input when (@lui_form_inputs_postfix = true){
 					border-radius: 3px 0 0 3px;
 				}
 			}
 
 			// TEXTAREA
-			textarea when (@lui_component_form_inputs_textarea = true){
+			textarea when (@lui_form_inputs_textarea = true){
 				.lui.form.item.value.textarea();
 			}
 
 			// SELECT
-			select when (@lui_component_form_inputs_select = true){
+			select when (@lui_form_inputs_select = true){
 				.lui.form.item.value.select();
 			}
 		}
@@ -75,37 +75,37 @@
 
 //  CUSTOM CHECKBOXES
 //  can be used outside lui_form
-.lui_check when (@lui_component_check = true){
+.lui_check when (@lui_form_check = true){
 	.lui.form.item.value.check();
 }
 
-.lui_check_list when (@lui_component_check = true){
+.lui_check_list when (@lui_form_check = true){
 	.lui.form.item.value.checklist();
 }
 
 
 //  CUSTOM RADIOS
 //  can be used outside lui_form
-.lui_radio when (@lui_component_radio = true){
+.lui_radio when (@lui_form_radio = true){
 	.lui.form.item.value.radio();
 }
 
-.lui_radio_list when (@lui_component_radio = true){
+.lui_radio_list when (@lui_form_radio = true){
 	.lui.form.item.value.radiolist();
 }
 
 
 //  CUSTOM SELECTS
 //  custom HTML selects using jQuery
-.ui-selectmenu-button when (@lui_component_form_select_jquery = true) {
+.ui-selectmenu-button when (@lui_form_select_jquery = true) {
 	.lui.form.item.value.select-jquery.this();
 }
-.ui-js-dropdown when (@lui_component_form_select_jquery = true){
+.ui-js-dropdown when (@lui_form_select_jquery = true){
 	.lui.form.item.value.select-jquery.dropdown();
 }
 
 
 //  JQUERY DATEPICKER
-.ui-datepicker {
+.ui-datepicker when (@lui_form_datepicker = true){
 	.lui.form.item.value.datepicker();
 }

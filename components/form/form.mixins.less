@@ -1,20 +1,20 @@
 // LUI2
 // FORM - MIXINS
 
-.lui.form {
+.lui.form when (@lui_form_mixins = true){
 
 	// FORM ITEM
 	.item {
 		.this(){
 			.lui.clear.after();
-			padding: @lui_component_form_item_spacing 0;
+			padding: @lui_form_item_spacing 0;
 			margin: 0 -15px;
 		}
 
 		// FORM ITEM LABEL
-		.label(){
+		.label() when (@lui_form_mixins_label = true){
 			display: block;
-			padding: @lui_component_form_label_spacing 15px;
+			padding: @lui_form_label_spacing 15px;
 			font-size: 16px;
 			text-align: right;
 
@@ -27,7 +27,7 @@
 			// RESPONSIVE LABELS
 			.block {
 				text-align: left;
-				padding: @lui_component_form_label_spacing 0;
+				padding: @lui_form_label_spacing 0;
 			}
 
 			&.xs-block {
@@ -36,7 +36,7 @@
 
 			.inline {
 				text-align: right;
-				padding: @lui_component_form_label_spacing 15px;
+				padding: @lui_form_label_spacing 15px;
 			}
 
 			&.xs-inline {
@@ -113,7 +113,7 @@
 
 		// STATUS
 		// FOR FORM VALIDATORS OR OTHER MESSAGES SHOWN BESIDE INPUT
-		.status() {
+		.status() when (@lui_form_mixins_status = true){
 			padding: 11px 15px;
 			margin: -5px 0;
 			font-size: 12px;
@@ -150,7 +150,7 @@
 		// INPUT
 		// wraps input or select elements
 		.value {
-			.this(){
+			.this() when (@lui_form_mixins_value = true){
 				// INPUT WITH PREFIX OR POSTFIX - width calculated by javascript
 				// POSTFIX/PREFIX HAS ABSOLUTE POSITION
 				&.postfix,
@@ -163,7 +163,7 @@
 			}
 
 			// PREFIX
-			.prefix(){
+			.prefix() when (@lui_form_mixins_prefix = true){
 				.lui.box-sizing.border-box();
 				display: block;
 				padding: 0 7px;
@@ -180,7 +180,7 @@
 			}
 
 			// POSTFIX
-			.postfix(){
+			.postfix() when (@lui_form_mixins_postfix = true){
 				.lui.box-sizing.border-box();
 				display: block;
 				padding: 0 7px;
@@ -198,7 +198,7 @@
 
 
 			// TEXT INPUT STYLES
-			.input(@width:100px){
+			.input(@width:100px) when (@lui_form_mixins_input = true){
 				width: @width;
 				height: 37px;
 				border: 1px solid #e2e2e2;
@@ -231,7 +231,7 @@
 			}
 
 			// TEXTAREA STYLES
-			.textarea(@width:100%,@height:100px,@max-width:100%,@max-height:500px){
+			.textarea(@width:100%,@height:100px,@max-width:100%,@max-height:500px) when (@lui_form_mixins_textarea = true){
 				width: @width;
 				min-height: @height;
 				max-width: @max-width;
@@ -262,7 +262,7 @@
 			}
 
 			// SELECT
-			.select(@width:100%){
+			.select(@width:100%) when (@lui_form_mixins_select = true){
 				width: @width;
 				height: 37px;
 				border: 1px solid #e2e2e2;
@@ -292,7 +292,7 @@
 			}
 
 			// SELECT JQUERY
-			.select-jquery(){
+			.select-jquery() when (@lui_form_mixins_select_jquery = true){
 
 				.this(){
 					position: relative;
@@ -391,7 +391,7 @@
 			}
 
 			// jQuery datepicker
-			.datepicker(){
+			.datepicker() when (@lui_form_mixins_datepicker = true){
 				display: none;
 
 				width: 300px;
@@ -498,7 +498,7 @@
 			}
 
 			// CHECKBOX
-			.check(){
+			.check() when (@lui_form_mixins_check = true){
 				position: relative;
 				display: inline-block;
 				cursor: pointer;
@@ -575,7 +575,7 @@
 			}
 
 			// LIST OF CHECKBOXES
-			.checklist(){
+			.checklist() when (@lui_form_mixins_check_list = true){
 				padding: 8px 0;
 
 				&.inline {
@@ -594,7 +594,7 @@
 			}
 
 			// RADIO
-			.radio(){
+			.radio() when (@lui_form_mixins_radio = true){
 				position: relative;
 				display: inline-block;
 				cursor: pointer;
@@ -671,7 +671,7 @@
 			}
 
 			// LIST OF RADIOS
-			.radiolist(){
+			.radiolist() when (@lui_form_mixins_radio_list = true){
 				padding: 8px 0;
 
 				&.inline {
@@ -690,7 +690,4 @@
 			}
 		}
 	}
-
-	
-
 }
