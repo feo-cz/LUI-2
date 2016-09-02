@@ -1,23 +1,23 @@
 {
-  "name": "LUI-2",
-  "homepage": "https://github.com/Foreveryone-cz/LUI-2",
-  "description": "Front-end framework for developing responsive websites",
-  "main": "",
-  "keywords": [
-    "responsive",
-    "framework",
-    "front-end",
-    "less",
-    "css",
-    "jquery"
-  ],
-  "authors": [
-    "Jiří Bělský"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components"
-  ]
+	"name": "LUI-2",
+	"homepage": "https://github.com/Foreveryone-cz/LUI-2",
+	"description": "Front-end framework for developing responsive websites",
+	"main": "",
+	"keywords": [
+		"responsive",
+		"framework",
+		"front-end",
+		"less",
+		"css",
+		"jquery"
+	],
+	"authors": [
+		"Jiří Bělský"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components"
+	]
 }
