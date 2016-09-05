@@ -1,0 +1,267 @@
+// LUI2 - ADMIN
+// THEME FILE
+
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	.font.open-sans.this();
+	font-size: 16px;
+}
+
+.admin_wrap {
+	overflow: hidden;
+	height: 100%;
+}
+
+
+/*
+
+ADMIN TOP 
+
+*/
+.admin_top {
+	padding: 0 15px;
+	height: 60px;
+	background: #f3f3f3;
+
+	.container {
+		height: 100%;
+		.row {
+			height: 100%;
+		}
+	}
+
+	/* LANGUAGE SELECT */
+	.dropdown {
+		position: relative;
+		height: 33px;
+		width: 200px;
+
+		.actual {
+			position: relative;
+			cursor: pointer;
+			padding: 7px 15px 7px 40px;
+			font-size: 14px;
+			z-index: 2;
+
+			&:before {
+				position: absolute;
+				top: 3px;
+				left: 4px;
+				width: 25px;
+				height: 25px;
+				border-radius: 25px;
+				background: white;
+				content: "";
+			}
+		}
+
+		&:hover .actual {
+			background: rgba(0,0,0,0.1);
+
+			&:before {
+				background: #f2f2f2;
+			}
+		}
+
+		.list {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			min-width: 200px;
+			padding-top: 20px;
+			display: none;
+
+			&:after {
+				position: absolute;
+				top: 10px;
+				left: 15px;
+				right: 15px;
+				content: "";
+				border-top: 1px solid #f2f2f2;
+				z-index: 2;
+			}
+			
+
+			&:before {
+				position: absolute;
+				top: -33px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: white;
+				box-shadow: 0 0 10px rgba(0,0,0,0.1);
+				content: "";
+				z-index: 1;
+			}
+
+			.item {
+				display: block;
+				padding: 7px 16px;
+				position: relative;
+				z-index: 2;
+				padding: 7px 15px 7px 40px;
+				text-decoration: none;
+
+				&:before {
+					position: absolute;
+					top: 3px;
+					left: 4px;
+					width: 25px;
+					height: 25px;
+					border-radius: 25px;
+					background: #f2f2f2;
+					content: "";
+				}
+
+				&:hover {
+					background: rgba(0,0,0,0.1);
+				}
+			}
+		}
+
+		&:hover .list {
+			display: block;
+		}
+	}
+}
+
+
+/*
+
+ADMIN SIDEBAR + CONTENT 
+
+*/
+.admin_main {
+	height: calc(~"100% - 60px");
+
+	& > .row {
+		height: 100%;
+	}
+}
+
+
+/*
+
+ADMIN SIDEBAR
+
+*/
+.admin_sidebar {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: rgb(29, 35, 43);
+	//border-right: 1px solid #c3cdda;
+
+	/* MAIN ADMIN NAVIGATION */
+	nav {
+
+		& > ul {
+			list-style: none;
+			margin: 0 -15px;
+
+			& > li {
+				& > a,
+				& > span {
+					display: block;
+					padding: 10px 15px;
+					font-size: 12px;
+					font-weight: bold;
+					color: #d8e1ed;
+					text-decoration: none;
+					
+				}
+
+				& > a:hover {
+					background: #272f3a;
+				}
+
+				& > ul {
+					list-style: none;
+
+					& > li {
+						& > a {
+							position: relative;
+							display: block;
+							padding: 13px 15px 13px 60px;
+							font-size: 14px;
+							color: #727c8a;
+							text-decoration: none;
+
+							&:hover {
+								background: #272f3a;
+								color: #9ea8b5;
+							}
+
+							&:before {
+								position: absolute;
+								top: 7px;
+								left: 15px;
+								width: 30px;
+								height: 30px;
+								border-radius: 30px;
+								line-height: 30px;
+								text-align: center;
+								background: rgba(0,0,0,0.2);
+								//content: "";
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*
+
+ADMIN CONTENT
+
+*/
+.admin_content {
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 15px;
+	background: #eaf1f7;
+
+	.content_header {
+		//border-top: 1px solid #e8ecf2;
+		border-bottom: 1px solid #e8ecf2;
+		margin: 0 -15px;
+		background: white;
+		padding: 30px;
+
+		&.in_head {
+			margin-top: -15px;
+		}
+
+		&.in_foot {
+			margin-bottom: -15px;
+		}
+
+		.title {
+			h1,
+			h2 {
+				.font.open-sans.regular();
+				font-size: 32px;
+				color: #292b2e;
+
+				span {
+					color: #435670;
+				}
+			}
+		}
+
+		.buttons {
+			text-align: right;
+		}
+
+		
+	}
+}
+
