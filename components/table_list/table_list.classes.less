@@ -1,0 +1,443 @@
+// LUI2
+// MESSAGE - CLASSNAMES
+
+
+.lui_table_list {
+	
+	.lui.table.list.this();
+
+	thead {
+		th,
+		td {
+			.lui.table.list.thead.cell();
+		}
+	}
+
+	
+	&.xs-list thead {
+		display: table-header-group;
+	}
+
+	&.xs-block thead {
+		display: none;
+	}
+	
+	// TODO: CONDITIONS TO CHECK IF BREAKPOINT IS USED
+	@media (min-width:@grid_sm_start){
+		&.sm-list thead {
+			display: table-header-group;
+		}
+
+		&.sm-block thead {
+			display: none;
+		}
+	}
+
+	@media (min-width:@grid_md_start){
+		&.md-list thead {
+			display: table-header-group;
+		}
+
+		&.md-block thead {
+			display: none;
+		}
+	}
+
+	@media (min-width:@grid_lg_start){
+		&.lg-list thead {
+			display: table-header-group;
+		}
+
+		&.lg-block thead {
+			display: none;
+		}
+	}
+
+	@media (min-width:@grid_xl_start){
+		&.xl-list thead {
+			display: table-header-group;
+		}
+
+		&.xl-block thead {
+			display: none;
+		}
+	}
+
+	@media (min-width:@grid_hd_start){
+		&.hd-list thead {
+			display: table-header-group;
+		}
+
+		&.hd-block thead {
+			display: none;
+		}
+	}
+
+	@media (min-width:@grid_2k_start){
+		&.2k-list thead {
+			display: table-header-group;
+		}
+
+		&.2k-block thead {
+			display: none;
+		}
+	}
+
+	tbody {
+		tr {
+			td,
+			th {
+				.lui.table.list.tbody.cell();
+			}
+
+			&:nth-child(even) td,
+			&:nth-child(even) th {
+				.lui.table.list.tbody.cell-even();
+			}
+		}
+	}
+
+	// TODO: CONDITIONS TO CHECK IF BREAKPOINT IS USED
+
+	&.xs-list tbody {
+		display: table-row-group;
+
+		tr {
+			display: table-row;
+
+			th,
+			td {
+				display: table-cell;
+			}
+
+			th[data-title],
+			td[data-title]{
+				text-align: inherit;
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&.xs-block tbody {
+		display: block;
+
+		tr {
+			display: block;
+
+			th,
+			td {
+				display: block;
+			}
+
+			th[data-title],
+			td[data-title]{
+				text-align: right;
+				.lui.clear.after();
+
+				&:before {
+					float: left;
+					content: attr(data-title);
+				}
+			}
+		}
+	}
+
+	@media (min-width:@grid_sm_start){
+		&.sm-list tbody {
+			display: table-row-group;
+
+			tr {
+				display: table-row;
+
+				th,
+				td {
+					display: table-cell;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: inherit;
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.sm-block tbody {
+			display: block;
+
+			tr {
+				display: block;
+
+				th,
+				td {
+					display: block;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: right;
+					.lui.clear.after();
+
+					&:before {
+						font-weight: bold;
+						float: left;
+						content: attr(data-title);
+					}
+				}
+			}
+		}
+	}
+
+
+	@media (min-width:@grid_md_start){
+		&.md-list tbody {
+			display: table-row-group;
+
+			tr {
+				display: table-row;
+
+				th,
+				td {
+					display: table-cell;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: inherit;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.md-block tbody {
+			display: block;
+
+			tr {
+				display: block;
+
+				th,
+				td {
+					display: block;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: right;
+					.lui.clear.after();
+
+					&:before {
+						font-weight: bold;
+						float: left;
+						content: attr(data-title);
+					}
+				}
+			}
+		}
+	}
+
+
+	@media (min-width:@grid_lg_start){
+		&.lg-list tbody {
+			display: table-row-group;
+
+			tr {
+				display: table-row;
+
+				th,
+				td {
+					display: table-cell;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: inherit;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.lg-block tbody {
+			display: block;
+
+			tr {
+				display: block;
+
+				th,
+				td {
+					display: block;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: right;
+					.lui.clear.after();
+
+					&:before {
+						font-weight: bold;
+						float: left;
+						content: attr(data-title);
+					}
+				}
+			}
+		}
+	}
+
+
+	@media (min-width:@grid_xl_start){
+		&.xl-list tbody {
+			display: table-row-group;
+
+			tr {
+				display: table-row;
+
+				th,
+				td {
+					display: table-cell;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: inherit;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.xl-block tbody {
+			display: block;
+
+			tr {
+				display: block;
+
+				th,
+				td {
+					display: block;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: right;
+					.lui.clear.after();
+
+					&:before {
+						font-weight: bold;
+						float: left;
+						content: attr(data-title);
+					}
+				}
+			}
+		}
+	}
+
+
+	@media (min-width:@grid_hd_start){
+		&.hd-list tbody {
+			display: table-row-group;
+
+			tr {
+				display: table-row;
+
+				th,
+				td {
+					display: table-cell;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: inherit;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hd-block tbody {
+			display: block;
+
+			tr {
+				display: block;
+
+				th,
+				td {
+					display: block;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: right;
+					.lui.clear.after();
+
+					&:before {
+						font-weight: bold;
+						float: left;
+						content: attr(data-title);
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width:@grid_2k_start){
+		&.2k-list tbody {
+			display: table-row-group;
+
+			tr {
+				display: table-row;
+
+				th,
+				td {
+					display: table-cell;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: right;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.2k-block tbody {
+			display: block;
+
+			tr {
+				display: block;
+
+				th,
+				td {
+					display: block;
+				}
+
+				th[data-title],
+				td[data-title]{
+					text-align: right;
+					.lui.clear.after();
+
+					&:before {
+						font-weight: bold;
+						float: left;
+						content: attr(data-title);
+					}
+				}
+			}
+		}
+	}
+	
+
+
+
+}

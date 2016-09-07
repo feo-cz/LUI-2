@@ -1,0 +1,91 @@
+// LUI2
+// TABLE - LIST - MIXINS
+
+
+.lui.table.list {
+	.this(){
+		border-collapse: collapse;
+		width: 100%;
+		padding: 5px;
+		overflow: hidden;
+		border: 0;
+	}
+
+	.thead {
+		.cell(){
+			padding: 10px;
+			font-weight: bold;
+			border-bottom: 2px solid rgba(0,0,0,0.05);
+			text-align: left;
+			
+			// TODO: TEXT ALIGN PER BREAKPOINT
+			&.a-left {
+				text-align: left;
+			}
+
+			&.a-center {
+				text-align: center;
+			}
+
+			&.a-right {
+				text-align: right;
+			}
+
+			&.va-top {
+				vertical-align: top;
+			}
+
+			&.va-middle,
+			&.va-center {
+				vertical-align: middle;
+			}
+
+			&.va-foot {
+				vertical-align: baseline;
+			}
+			// TODO: TEXT ALIGN PER BREAKPOINT
+		}
+	}
+
+	.tbody {
+		.cell(){
+			padding: 10px;
+			border-bottom: 1px solid rgba(0,0,0,0.03);
+		
+
+			// TODO: TEXT ALIGN PER BREAKPOINT
+			&.a-left {
+				text-align: left;
+			}
+
+			&.a-center {
+				text-align: center;
+			}
+
+			&.a-right {
+				text-align: right;
+			}
+
+			&.va-top {
+				vertical-align: top;
+			}
+
+			&.va-middle,
+			&.va-center {
+				vertical-align: middle;
+			}
+
+			&.va-foot {
+				vertical-align: baseline;
+			}
+
+			// TODO: TEXT ALIGN PER BREAKPOINT
+		}
+
+		.cell-even(){
+			&:nth-child(even){
+				border-bottom: 1px solid rgba(0,0,0,0.05);
+			}
+		}
+	}
+}
