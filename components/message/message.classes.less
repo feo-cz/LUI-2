@@ -7,6 +7,10 @@
 		.lui.message.this();
 	}
 
+	&.empty when (@lui_message_empty_enabled = true){
+		.lui.message.empty();
+	}
+
 	&.info when (@lui_message_info_enabled = true){
 		.lui.message.info();
 	}

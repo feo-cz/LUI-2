@@ -11,6 +11,11 @@
 		border-radius: @lui_message_border-radius;
 	}
 
+	.empty() when (@lui_message_mixin_empty_enabled = true){
+		background: transparent;
+		color: inherit;
+	}
+
 	.info() when (@lui_message_mixin_info_enabled = true){
 		background: @lui_message_info_bg;
 		color: @lui_message_info_color;

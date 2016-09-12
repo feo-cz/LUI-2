@@ -210,6 +210,10 @@
 		background: @lui_button_default_hover_bg;
 	}
 
+	.hover-inverted() when (@lui_button_mixin_default_enabled = true){
+		background: @lui_button_default_hover_inv_bg;
+	}
+
 	.active() when (@lui_button_mixin_default_enabled = true){
 		background: @lui_button_default_active_bg;
 	}
