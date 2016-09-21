@@ -517,11 +517,22 @@
 				height: 30px;
 				padding-left: 30px;
 
+				// FUCKING BROWSER DEVELOPERS
+				// WHICH DECIDED TO HIDE ERRORS FOR NOT RENDERED INPUTS
+				// MUST BE RENDERED OR "REQUIRED" INPUT WONT SHOW ERROR
+				// input will become 1px dot hiding behind "before" FA icon
 				input {
-					opacity: 0;
+					display: inline-block;
 					position: absolute;
-					width: 0;
-					height: 0;
+					top: 22px;
+					left: 7px;
+					
+					width: 1px;
+					height: 1px;
+					border: 0;
+					outline: none;
+					background-color: transparent !important;
+					opacity: 0.1;
 				}
 
 				// SPAN MUST USED AT ALL TIME
@@ -565,7 +576,7 @@
 					background: rgba(0,0,0,0.05);
 
 					&:before {
-						content: "\f14a";
+						color: #2c2c2c;
 					}
 				}
 
@@ -613,11 +624,22 @@
 				height: 30px;
 				padding-left: 30px;
 
+				// FUCKING BROWSER DEVELOPERS
+				// WHICH DECIDED TO HIDE ERRORS FOR NOT RENDERED INPUTS
+				// MUST BE RENDERED OR "REQUIRED" INPUT WONT SHOW ERROR
+				// input will become 1px dot hiding behind "before" FA icon
 				input {
-					opacity: 0;
+					display: inline-block;
 					position: absolute;
-					width: 0;
-					height: 0;
+					top: 22px;
+					left: 7px;
+					
+					width: 1px;
+					height: 1px;
+					border: 0;
+					outline: none;
+					background-color: transparent !important;
+					opacity: 0.1;
 				}
 
 				// SPAN MUST USED AT ALL TIME
@@ -661,7 +683,7 @@
 					background: rgba(0,0,0,0.05);
 
 					&:before {
-						content: "\f192";
+						color: #2c2c2c;
 					}
 				}
 
