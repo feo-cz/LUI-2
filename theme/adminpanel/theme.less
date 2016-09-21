@@ -136,6 +136,32 @@ ADMIN TOP
 			display: block;
 		}
 	}
+
+	// USER INFO
+	.user_info {
+		padding: 0 30px;
+
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: right;
+		color: #c5d9e6;
+		flex: 1 1 auto;
+
+		a {
+			text-decoration: none;
+			font-weight: bold;
+			color: white;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		time {
+			//color: #85a9be;
+		}
+	}
 }
 
 
@@ -164,59 +190,17 @@ ADMIN SIDEBAR
 	background: #f9fbff;
 	border-right: 1px solid #cad7e3;
 
-	/* LOGGED USER */
-	.logged_user {
-		padding: 15px 0 30px 0px;
-		overflow: hidden;
-
-		.photo {
-			float: left;
-			width: 70px;
-			height: 70px;
-			border-radius: 70px;
-			background: #e4ecfa;
-			overflow: hidden;
-			margin-right: 15px;
-		}
-
-		.texts {
-			overflow: hidden;
-
-			.name {
-				padding: 0 5px;
-				font-size: 18px;
-				font-weight: bold;
-				color: #222c32;
-			}
-
-			.time {
-				padding: 5px;
-				font-size: 13px;
-				color: #647f97;
-			}
-
-			.actions {
-				font-size: 12px;
-
-				a {
-					display: inline-block;
-					padding: 6px 5px;
-					line-height: 12px;
-					border-radius: 3px;
-					//background: #d8e2f3;
-					margin-right: 5px;
-					text-decoration: none;
-
-					&:hover {
-						background: #6cb9f5;
-						color: white;
-					}
-				}
-			}
-		}
+	// SECTION TITLE
+	header {
+		display: block;
+		padding: 15px 0;
+		margin-bottom: 15px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		font-size: 13px;
+		text-transform: uppercase;
 	}
 
-	/* MAIN ADMIN NAVIGATION */
+	// MAIN ADMIN NAVIGATION
 	nav {
 
 		& > ul {
@@ -384,3 +368,63 @@ ADMIN CONTENT
 	}
 }
 
+
+
+
+/*
+
+ADMIN PAGES TREE NAVIGATION
+
+*/
+.pages_tree_navigation {
+	height: 100%;
+	border-right: 1px solid #f2f2f2;
+
+	ul {
+		list-style: none;
+		display: block;
+
+		li {
+			.lui.flexbox.block();
+			.lui.flexbox.justify-content(center);
+			.lui.flexbox.align-items(center);
+			.lui.flexbox.wrap(wrap);
+			border-bottom: 1px solid #f2f2f2;
+
+			& > a {
+				display: block;
+				-webkit-flex: 1 1 auto;
+				-ms-flex: 1 1 auto;
+				flex: 1 1 auto;
+				padding: 10px;
+			}
+			
+			& > .options {
+				opacity: 0;
+				a {
+					display: inline-block;
+					padding: 5px;
+					font-size: 13px;
+					text-decoration: none;
+					color: gray;
+
+					&:hover {
+						background: #f2f2f2;
+						color: black;
+					}
+				}
+			}
+
+			&:hover > .options {
+				opacity: 1;
+			}
+
+			ul {
+				clear: both;
+				padding-left: 10px;
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
