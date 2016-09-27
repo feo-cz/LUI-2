@@ -44,6 +44,65 @@
 				vertical-align: baseline;
 			}
 			// TODO: TEXT ALIGN PER BREAKPOINT
+
+
+			&.sortable,
+			&.sortable-js {
+				
+
+				a {
+					position: relative;
+					padding-right: 35px;
+
+					&:hover {
+						text-decoration: none;
+						color: #1185df;
+					}
+
+					&:before,
+					&:after {
+						position: absolute;
+						top: 0;
+						width: 13px;
+						line-height: 10px;
+						height: 10px;
+						top: 50%;
+						margin-top: -5px;
+						text-align: center;
+						font-family: FontAwesome;
+						color: silver;
+					}
+
+					&:before {
+						right: 0;
+						content: "\f0d7";
+					}
+
+					&:after {
+						right: 13px;
+						content: "\f0d8";
+					}
+
+					
+				}
+
+				&.asc_active a:after {
+					color: inherit;
+				}
+
+				&.desc_active a:before {
+					color: inherit;
+				}
+			}
+
+			&.sortable-js {
+				cursor: pointer;
+
+				&:hover > a {
+					text-decoration: none;
+					color: #1185df;
+				}
+			}
 		}
 	}
 
