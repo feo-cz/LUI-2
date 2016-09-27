@@ -107,6 +107,16 @@
 	}
 
 	.tbody {
+		.row(){
+			&.found {
+				opacity: 1;
+			}
+
+			&.not-found {
+				opacity: 0.4;
+			}
+		}
+
 		.cell(){
 			padding: 10px;
 			border-bottom: 1px solid rgba(0,0,0,0.03);
