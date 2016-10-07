@@ -1,0 +1,29 @@
+// LUI2
+// PIE AND DONUT BOX
+
+
+.lui_donut_box when (@lui_stats_piedonutbox_class_enabled = true) {
+	.lui.piedonut_box.this();
+
+	& > .inside {
+		.lui.piedonut_box.inside();
+
+		.peity {
+			.lui.piedonut_box.peity();
+		}
+
+		.value {
+			.lui.piedonut_box.value();
+		}
+
+		.title {
+			.lui.piedonut_box.title();
+		}
+	}
+}
+
+.lui_pie_box when (@lui_stats_piedonutbox_class_enabled = true){
+	.lui_donut_box();
+}
+
+
