@@ -26,4 +26,8 @@
 	&.success when (@lui_message_success_enabled = true){
 		.lui.message.success();
 	}
+
+	button.close when (@lui_message_close_button_enable = true){
+		.lui.message.close-button();
+	}
 }

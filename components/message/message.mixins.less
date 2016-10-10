@@ -4,6 +4,7 @@
 
 .lui.message when (@lui_message_mixin_enabled = true){
 	.this() when (@lui_message_mixin_default_enabled = true){
+		position: relative;
 		margin: 7px 0;
 		padding: 15px;
 		background: @lui_message_default_bg;
@@ -34,5 +35,24 @@
 	.success() when (@lui_message_mixin_success_enabled = true){
 		background: @lui_message_success_bg;
 		color: @lui_message_success_color;
+	}
+
+	// CLOSE BUTTON
+	.close-button() when (@lui_message_close_button_enable = true){
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 30px;
+		border: 0;
+		background: transparent;
+		.lui.user-select.none();
+		cursor: pointer;
+		color: rgba(0,0,0,0.5);
+		border-radius: @lui_message_border-radius;
+
+		&:hover {
+			background: rgba(0,0,0,0.1);
+		}
 	}
 }
