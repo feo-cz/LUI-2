@@ -1,0 +1,31 @@
+// LUI2
+// ACCORDION - CLASSNAMES
+
+
+.lui_accordion when (@lui_accordion_class_enabled = true){
+	.lui.accordion.this();
+
+	.ui-accordion-header {
+		.lui.accordion.header.this();
+
+		&.info {
+			.lui.accordion.header.info();
+		}
+
+		&.warning {
+			.lui.accordion.header.warning();
+		}
+
+		&.positive {
+			.lui.accordion.header.positive();
+		}
+
+		&.negative {
+			.lui.accordion.header.negative();
+		}
+	}
+
+	*.ui-accordion-content {
+		.lui.accordion.content();
+	}
+}

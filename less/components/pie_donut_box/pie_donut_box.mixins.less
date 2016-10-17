@@ -1,0 +1,32 @@
+// LUI2
+// PIE AND DONUT BOX - MIXINS
+
+
+
+.lui.piedonut_box when (@lui_stats_piedonutbox_mixins_enabled = true){
+	.this(){
+		padding: 7px 0;
+	}
+
+	.inside(){
+		padding: 15px;
+		background: white;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.peity(){
+		display: block;
+		margin: 0 auto;
+	}
+
+	.value(){
+		padding: 10px 0 0 0;
+		.font.open-sans.semibold();
+		font-size: 17px;
+	}
+
+	.title(){
+		.font.open-sans.light();
+	}
+}

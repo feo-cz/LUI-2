@@ -1,0 +1,33 @@
+// LUI2
+// MESSAGE - CLASSNAMES
+
+
+.lui_message when (@lui_message_class_enabled = true){
+	& when (@lui_message_default_enabled = true){
+		.lui.message.this();
+	}
+
+	&.empty when (@lui_message_empty_enabled = true){
+		.lui.message.empty();
+	}
+
+	&.info when (@lui_message_info_enabled = true){
+		.lui.message.info();
+	}
+
+	&.warning when (@lui_message_warning_enabled = true){
+		.lui.message.warning();
+	}
+
+	&.error when (@lui_message_error_enabled = true){
+		.lui.message.error();
+	}
+
+	&.success when (@lui_message_success_enabled = true){
+		.lui.message.success();
+	}
+
+	button.close when (@lui_message_close_button_enable = true){
+		.lui.message.close-button();
+	}
+}
