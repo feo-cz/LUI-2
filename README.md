@@ -28,7 +28,7 @@ Repository for LUI 2.0 development
 - if you want to use custom LUI configuration, copy `config.less` into your project directory (or simply copy variables you would like to change) and import it after LUI, so it will overwrite default configuration
 
 Sample of your `project.less`
-```
+```less
 @import "/path/to/lui2/less/router.less"; // lui2
 
 @import "/path/to/project-styles/config.less"; // project settings
