@@ -25,12 +25,20 @@ Repository for LUI 2.0 development
 
 ### Using LUI in your project
 - import `router.less` in your project less file
-- or import your project less file at the end of `router.less`
-- *or if you don't want to use anything from LUI in your less files, you can use it as "standalone" package*
+- if you want to use sustom LUI configuration, copy `config.less` into your project directory (or simply copy variables you would like to change) and import it after LUI, so it wil overwrite default configuration
+
+Sample or your `project.less`
+```
+@import "/path/to/lui2/less/router.less"; // lui2
+
+@import "/path/to/project-styles/config.less"; // project settings
+
+@import "/path/to/project-styles/theme.less"; // project styles
+```
 
 ### Configuration
 - `config.less` is main configuration file. If you use bower or composer to download LUI, you can create your own config and import it in your project less file. Make sure this config is imported after LUI, so it will overwrite default settings. Same applies for component's configs.
-- Then each component has its own config. For example button have `button.config.less` which is inside `components/button/` folder. This is to make LUI as modular as possible, so you can remove button folder completely, if you know you wont use it, or you can simply turn all styles off in `button.config.less`. However **grid is required in LUI**, as it's variables are used in other less files (grid breakpoints)
+- Then each component has its own config. For example button have `button.config.less` which is inside `less/components/button/` folder. If you know you wont use this component  you can simply turn all styles off in `button.config.less`. However **grid is required in LUI**, as it's variables are used in other less files (grid breakpoints for example)
 
 
 ### Features
