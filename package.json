@@ -1,6 +1,6 @@
 {
     "name": "lui2",
-    "version": "2.1",
+    "version": "2.1.0",
     "description": "Front-end framework for fast and easy development of responsive websites",
     "main": "less/router.less",
     "scripts": {
