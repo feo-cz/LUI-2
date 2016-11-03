@@ -25,11 +25,9 @@
 			list-style: none;
 			float: left;
 
-			
 			&.right {
 				float: right;
 			}
-			
 		}
 
 		.this-block(){
@@ -59,7 +57,6 @@
 
 		.item-block() when (@lui_tabs_mixins_list_item_enabled = true){
 			float: none;
-			
 
 			&:before {
 				position: absolute;
@@ -82,6 +79,8 @@
 			//font-size: 13px;
 			color: #2c2c2c;
 			text-decoration: none;
+			.lui.user-select.none();
+			outline: none;
 
 			&:before {
 				font-family: FontAwesome;

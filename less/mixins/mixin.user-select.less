@@ -4,10 +4,13 @@
 
 .lui.user-select {
 	.this(@args){
-		-webkit-user-select: @args;
-		-moz-user-select: @args;
-		-ms-user-select: @args;
-		user-select: @args;
+		// credit @Blowsie: http://stackoverflow.com/a/4407335
+		-webkit-touch-callout: @args; // iOS Safari
+		-webkit-user-select: @args; // Chrome/Safari/Opera
+		-khtml-user-select: @args; // Konqueror 
+		-moz-user-select: @args; // Firefox
+		-ms-user-select: @args; // Internet Explorer/Edge
+		user-select: @args; // native support
 	}
 
 	.none(){

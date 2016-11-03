@@ -18,9 +18,14 @@ Repository for LUI 2.0 development
 
 ---
 
+### Features
+- Completely **responsive**
+- **Flexbox** grid with many options such as horizontal, vertical alignment, extra column sizes and more
+- Completely modular. Need grid only? no problem!
+
 ### Installation
-- `bower install LUI-2`
-- `composer install Foreveryone-cz/LUI-2`
+- `bower install LUI-2` 
+- `composer install Foreveryone-cz/LUI-2` 
 - download or clone manualy
 
 ### Using LUI in your project
@@ -32,7 +37,6 @@ Sample of your `project.less`
 @import "/path/to/lui2/less/router.less"; // lui2
 
 @import "/path/to/project-styles/config.less"; // project settings
-
 @import "/path/to/project-styles/theme.less"; // project styles
 ```
 
@@ -40,17 +44,14 @@ Sample of your `project.less`
 - `config.less` is main configuration file. If you use bower or composer to download LUI, you can create your own config and import it in your project less file. Make sure this config is imported after LUI, so it will overwrite default settings. Same applies for component's configs.
 - Then each component has its own config. For example button have `button.config.less` which is inside `less/components/button/` folder. If you know you wont use this component  you can simply turn all styles off in `button.config.less`. However **grid is required in LUI**, as it's variables are used in other less files (grid breakpoints for example)
 
-
-### Features
-- Completely **responsive**
-- **Flexbox** grid with many options such as horizontal, vertical alignment, extra column sizes and more
-- Completely modular. Need grid only? no problem!
+### Minify JS files
+- all JS files from `js/` folder can be minified using gulp - just run `gulp minify` in console
 
 ### Compatibility
 - Android 5 and newer
 - iOS 7 and newer
 - Mac OS X Mavericks and newer (Safari 7.1)
-- Internet Explorer 10 and newer (Internet Explorer 9 with javascript help)
+- Internet Explorer 11 (IE 10 works without some align features in grid)
 
 ### Supported by
 
