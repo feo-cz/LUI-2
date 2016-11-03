@@ -276,7 +276,7 @@
 			}
 
 			// TAGSBOX
-			.tagsbox(@width:100%){
+			.tagsbox(@width:100%) when (@lui_form_mixins_tagsbox = true){
 				width: @width;
 				min-height: 37px;
 				border: 1px solid #e2e2e2;
@@ -316,12 +316,9 @@
 							}
 						}
 					}
-				
 
 					&.tagit-new {
-						-webkit-flex: 1 1 auto;
-						-ms-flex: 1 1 auto;
-						flex: 1 1 auto;
+						.lui.flexbox.flex(1 1 auto);
 						margin-right: 0;
 
 						input {
@@ -338,7 +335,7 @@
 					}
 				}
 
-				&.primary > li.tagit-choice  {
+				&.primary > li.tagit-choice when (@lui_form_tagsbox_item_primary_enabled = true){
 					background: @lui_form_tagsbox_item_bg_primary_color;
 					color: @lui_form_tagsbox_item_text_primary_color;
 
@@ -347,7 +344,7 @@
 					}
 				}
 
-				&.positive > li.tagit-choice  {
+				&.positive > li.tagit-choice when (@lui_form_tagsbox_item_positive_enabled = true){
 					background: @lui_form_tagsbox_item_bg_positive_color;
 					color: @lui_form_tagsbox_item_text_positive_color;
 
@@ -356,7 +353,7 @@
 					}
 				}
 
-				&.negative > li.tagit-choice  {
+				&.negative > li.tagit-choice when (@lui_form_tagsbox_item_negative_enabled = true){
 					background: @lui_form_tagsbox_item_bg_negative_color;
 					color: @lui_form_tagsbox_item_text_negative_color;
 
@@ -365,7 +362,7 @@
 					}
 				}
 
-				&.warning > li.tagit-choice  {
+				&.warning > li.tagit-choice when (@lui_form_tagsbox_item_warning_enabled = true){
 					background: @lui_form_tagsbox_item_bg_warning_color;
 					color: @lui_form_tagsbox_item_text_warning_color;
 
