@@ -46,9 +46,16 @@
 
 
 // HORIZONTAL SPACING
-@lui_container_padding:		 15px;
-@lui_row_margin:			-15px;
-@lui_col_padding:			 15px;
+@lui_container_padding:		 15px; // DON'T USE PERCENTAGE VALUE
+@lui_row_margin:			-15px; // DON'T USE PERCENTAGE VALUE
+@lui_col_padding:			 15px; // DON'T USE PERCENTAGE VALUE
+
+// per breakpoint padding does not remove default 15px paddings
+// it can be used to remove or add various paddings on each breakpoint
+// if you define for example .pv-xs-0 (padding vertical on XS = 0px) you'll have to reset it on larger
+// same like other grid stuff, it's "mobile first" (min-width:XYZ and up)
+// IF YOU DONT WANT TO USE THIS FEATURE, YOU CAN TURN IT OFF TO SAVE SOME CSS
+@lui_col_padding_per_breakpoint: true;
 
 
 // DIMENSIONS
