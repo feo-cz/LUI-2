@@ -346,6 +346,10 @@
 	.lui.grid.column.this();
 }
 
+// PADDINGS (only vertical and horizontal)
+.pv-@{lui_col_padding}{padding-top: @lui_col_padding;	padding-bottom: @lui_col_padding;};
+.ph-@{lui_col_padding}{padding-left: @lui_col_padding;	padding-right: @lui_col_padding;};
+
 // NON-RESPONSIVE COLS
 .col-0  {.lui.grid.column.hidden()}
 .col-1	{.lui.grid.column.width-1("col-1")}
