@@ -52,7 +52,7 @@
 
 		// RESPONSIVE
 		// each breakpoint is enabled/disabled by GRID configuration file
-		// so its easy to turn off styles for unused breakpoints (ex: HD, 2K)
+		// so its easy to turn off styles for unused breakpoints (ex: xxl, xxxl)
 		// to save file size of compiled styles
 		& when (@grid_sm_enable = true){
 			@media (min-width:@grid_sm_start){
@@ -134,41 +134,41 @@
 			}
 		}
 
-		& when (@grid_hd_enable = true){
-			@media (min-width:@grid_hd_start){
-				&.hd-hidden {
+		& when (@grid_xxl_enable = true){
+			@media (min-width:@grid_xxl_start){
+				&.xxl-hidden {
 					.lui.button.hidden();
 				}
-				&.hd-small {
+				&.xxl-small {
 					.lui.button.small();
 				}
-				&.hd-regular {
+				&.xxl-regular {
 					.lui.button.regular();
 				}
-				&.hd-big {
+				&.xxl-big {
 					.lui.button.big();
 				}
-				&.hd-huge {
+				&.xxl-huge {
 					.lui.button.huge();
 				}
 			}
 		}
 
-		& when (@grid_2k_enable = true){
-			@media (min-width:@grid_2k_start){
-				&.2k-hidden {
+		& when (@grid_xxxl_enable = true){
+			@media (min-width:@grid_xxxl_start){
+				&.xxxl-hidden {
 					.lui.button.hidden();
 				}
-				&.2k-small {
+				&.xxxl-small {
 					.lui.button.small();
 				}
-				&.2k-regular {
+				&.xxxl-regular {
 					.lui.button.regular();
 				}
-				&.2k-big {
+				&.xxxl-big {
 					.lui.button.big();
 				}
-				&.2k-huge {
+				&.xxxl-huge {
 					.lui.button.huge();
 				}
 			}
