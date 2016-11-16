@@ -2,7 +2,7 @@
 // PIE AND DONUT BOX
 
 
-.lui_donut_box when (@lui_stats_piedonutbox_class_enabled = true) {
+.@{lui_class_prefix}_donut_box when (@lui_stats_piedonutbox_class_enabled = true) {
 	.lui.piedonut_box.this();
 
 	& > .inside {
@@ -22,7 +22,7 @@
 	}
 }
 
-.lui_pie_box when (@lui_stats_piedonutbox_class_enabled = true){
+.@{lui_class_prefix}_pie_box when (@lui_stats_piedonutbox_class_enabled = true){
 	.lui_donut_box();
 }
 

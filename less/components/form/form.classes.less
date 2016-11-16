@@ -2,7 +2,7 @@
 // FORM - CLASSNAMES
 
 
-.lui_form when (@lui_form = true){
+.@{lui_class_prefix}_form when (@lui_form = true){
 	.item {
 		.lui.form.item.this();
 
@@ -74,22 +74,22 @@
 
 //  CUSTOM CHECKBOXES
 //  can be used outside lui_form
-.lui_check when (@lui_form_check = true){
+.@{lui_class_prefix}_check when (@lui_form_check = true){
 	.lui.form.item.value.check();
 }
 
-.lui_check_list when (@lui_form_check = true){
+.@{lui_class_prefix}_check_list when (@lui_form_check = true){
 	.lui.form.item.value.checklist();
 }
 
 
 //  CUSTOM RADIOS
 //  can be used outside lui_form
-.lui_radio when (@lui_form_radio = true){
+.@{lui_class_prefix}_radio when (@lui_form_radio = true){
 	.lui.form.item.value.radio();
 }
 
-.lui_radio_list when (@lui_form_radio = true){
+.@{lui_class_prefix}_radio_list when (@lui_form_radio = true){
 	.lui.form.item.value.radiolist();
 }
 
@@ -111,6 +111,6 @@
 
 
 // JQUERY TAGSBOX
-.lui_tagsbox when (@lui_form_tagsbox = true){
+.@{lui_class_prefix}_tagsbox when (@lui_form_tagsbox = true){
 	.lui.form.item.value.tagsbox();
 }
