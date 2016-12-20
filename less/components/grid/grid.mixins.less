@@ -86,6 +86,10 @@
 		.max-xxxl() when (@grid_xxxl_enable = true){
 			max-width: @lui_container_xxxl_width;
 		}
+		.print() when (@grid_print_enable = true){
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 
 	.row {

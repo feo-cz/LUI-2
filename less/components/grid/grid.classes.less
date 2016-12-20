@@ -41,6 +41,12 @@
 	&.fluid {
 		.lui.grid.container.fluid();
 	}
+
+	@media print {
+		& when (@grid_print_enable = true){
+			.lui.grid.container.print();
+		}
+	}
 }
 
 .row {
