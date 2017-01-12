@@ -9,7 +9,7 @@
 
 Front-end framework for fast and easy web development of responsive websites
 
-If you're looking for **older LUI** look here: https://github.com/Foreveryone-cz/LUI
+**Need more modularity?** LUI-3 is now in development. New, completely modular version of this framework https://github.com/LUI-3
 
 ---
 
